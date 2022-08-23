@@ -1,0 +1,25 @@
+<template>
+    
+    <lightning-combobox
+        name="estados"
+        label="Estados"
+        value={estadoSelecionado}
+        placeholder="Selecione o estado"
+        options={estados}
+        onchange={handleEstadoChange}
+        disabled={isEstadoDisabled}
+        required="true">
+    </lightning-combobox>
+
+    <lightning-combobox
+        name="cidades"
+        label="Cidades"
+        value={cidadeSelecionada}
+        placeholder="Selecione a cidade"
+        options={cidades}
+        onchange={handleCidadeChange}
+        disabled={isCidadeDisabled}
+        required="true">
+    </lightning-combobox>
+
+</template>
